@@ -9,10 +9,16 @@ Sistema completo para criar habilidades de alta qualidade para o Claude Code.
 
 [📖 Documentação](skill-forge/README-INSTALACAO.md) | [🚀 Instalação](skill-forge/install.sh)
 
-**Instalação:**
+**Instalação (Método Recomendado):**
 ```bash
 cd skill-forge
 ./install.sh
+```
+
+**Instalação Rápida (Download direto do .skill):**
+```bash
+# Baixar o arquivo skill-forge.skill da pasta releases/
+unzip skill-forge.skill -d ~/.claude/skills/skill-forge
 ```
 
 **Usando os scripts:**
