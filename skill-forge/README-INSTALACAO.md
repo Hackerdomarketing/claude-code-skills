@@ -28,6 +28,42 @@ No Claude Code, use:
 - **forge_package.py** - Empacota skill para distribuição
 - **forge_analyze.py** - Analisa e sugere melhorias
 
+## Usando os Scripts Python
+
+Os scripts requerem Python 3.10+ e PyYAML. Use o wrapper `forge.sh` para facilitar:
+
+```bash
+# Ver ajuda
+./forge.sh
+
+# Criar nova skill
+./forge.sh init minha-skill --path ~/skills
+
+# Validar skill
+./forge.sh validate ~/skills/minha-skill
+
+# Analisar skill
+./forge.sh analyze ~/skills/minha-skill
+
+# Empacotar skill
+./forge.sh package ~/skills/minha-skill --output ~/dist
+```
+
+### Requisitos dos Scripts
+
+Se preferir executar os scripts diretamente:
+
+```bash
+# Instalar Python 3.12
+brew install python@3.12
+
+# Instalar PyYAML
+python3.12 -m pip install --break-system-packages pyyaml
+
+# Executar script
+python3.12 scripts/forge_init.py minha-skill --path ~/skills
+```
+
 ## Estrutura
 
 ```

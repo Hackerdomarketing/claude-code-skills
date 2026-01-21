@@ -15,6 +15,13 @@ cd skill-forge
 ./install.sh
 ```
 
+**Usando os scripts:**
+```bash
+./forge.sh                                    # Ver ajuda
+./forge.sh init minha-skill --path ~/skills   # Criar nova skill
+./forge.sh validate ~/skills/minha-skill      # Validar skill
+```
+
 ## Como Usar Este Repositório
 
 1. Clone o repositório:
